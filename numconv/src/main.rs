@@ -1,16 +1,10 @@
 #[macro_use]
 extern crate clap;
+#[macro_use]
+extern crate common;
 
+use clap::{App, Arg, ArgMatches};
 use std::i32;
-use clap::{App, ArgMatches, Arg};
-
-macro_rules! die {
-    ($($arg:tt)*) => ({
-        use std::io::Write;
-        (writeln!(&mut ::std::io::stderr(), $($arg)*)).expect("stderr");
-        ::std::process::exit(1)
-    })
-}
 
 fn parse_cli() -> ArgMatches<'static> {
     App::new(crate_name!())

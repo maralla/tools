@@ -1,8 +1,6 @@
 [package]
-name = "numconv"
+name = "common"
 version = "0.1.0"
 authors = ["maralla <maralla.ai@gmail.com>"]
 
 [dependencies]
-clap = "~2.31.2"
-common = { path = "../common" }

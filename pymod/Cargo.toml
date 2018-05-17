@@ -1,5 +1,5 @@
 [package]
-name = "numconv"
+name = "pymod"
 version = "0.1.0"
 authors = ["maralla <maralla.ai@gmail.com>"]
 
